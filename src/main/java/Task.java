@@ -5,5 +5,8 @@ public class Task {
         }
         return getGreatestCommonDivisor(b, a % b);
     }
+    public int getLeastCommonMultiple(int a, int b){
+        return a * b/getGreatestCommonDivisor(a,b);
+    }
 
 }
