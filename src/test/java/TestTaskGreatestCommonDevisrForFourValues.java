@@ -21,23 +21,24 @@ public class TestTaskGreatestCommonDevisrForFourValues {
         this.theerdValue = theerdValue;
         this.fourthValue = fourthValue;
     }
+
     @Parameterized.Parameters
-    public static Collection<Object[]> setValue(){
+    public static Collection<Object[]> setValue() {
         return Arrays.asList(new Object[][]{
-                {12,12,24,36,48},
-                {2,20,60,78,100},
-                {1,5,30,78,100},
-                {5,50,25,10,60},
-                {1,3,8,10,34},
-                {1,8,8,10,5},
-                {1,4,45,10,55}
+                {12, 12, 24, 36, 48},
+                {2, 20, 60, 78, 100},
+                {1, 5, 30, 78, 100},
+                {5, 50, 25, 10, 60},
+                {1, 3, 8, 10, 34},
+                {1, 8, 8, 10, 5},
+                {1, 4, 45, 10, 55}
 
         });
     }
 
     @Test
-    public void testGCDFourValue(){
+    public void testGCDFourValue() {
         Task task = new Task();
-        Assert.assertEquals(expect,task.getGreatestCommonDivisorFourValues(firstValue,secondValue,theerdValue,fourthValue));
+        Assert.assertEquals(expect, task.getGreatestCommonDivisorFourValues(firstValue, secondValue, theerdValue, fourthValue));
     }
 }

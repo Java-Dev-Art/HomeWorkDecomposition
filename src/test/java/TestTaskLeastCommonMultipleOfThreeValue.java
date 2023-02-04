@@ -19,20 +19,22 @@ public class TestTaskLeastCommonMultipleOfThreeValue {
         this.secondNumber = secondNumber;
         this.thirdNumber = thirdNumber;
     }
+
     @Parameterized.Parameters
-    public static Collection<Object[]> setParameters(){
+    public static Collection<Object[]> setParameters() {
         return Arrays.asList(new Object[][]{
-                {180,4,45,10},
-                {10,2,5,10},
-                {35700,21,51,100},
-                {120,5,6,8},
-                {1296,4,16,81},
-                {40,5,1,8}
+                {180, 4, 45, 10},
+                {10, 2, 5, 10},
+                {35700, 21, 51, 100},
+                {120, 5, 6, 8},
+                {1296, 4, 16, 81},
+                {40, 5, 1, 8}
         });
     }
+
     @Test
-    public void testLestCommonMultipleForThreeNumbers(){
+    public void testLestCommonMultipleForThreeNumbers() {
         Task task = new Task();
-        Assert.assertEquals(expect,task.getLeastCommonMultipleForThreeNumbers(firstNumber,secondNumber,thirdNumber));
+        Assert.assertEquals(expect, task.getLeastCommonMultipleForThreeNumbers(firstNumber, secondNumber, thirdNumber));
     }
 }

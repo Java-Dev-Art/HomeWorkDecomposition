@@ -17,19 +17,21 @@ public class TestTaskLeastCommonMultipleOfTwoValue {
         this.valueFirst = valueFirst;
         this.valueSecond = valueSecond;
     }
+
     @Parameterized.Parameters
-    public static Collection<Object[]> setParameters(){
+    public static Collection<Object[]> setParameters() {
         return Arrays.asList(new Object[][]{
-                {36,9,12},
-                {2322,54,86},
-                {48,12,16},
-                {160,40,32},
-                {490,98,35},
-                {4592,112,82}
+                {36, 9, 12},
+                {2322, 54, 86},
+                {48, 12, 16},
+                {160, 40, 32},
+                {490, 98, 35},
+                {4592, 112, 82}
         });
     }
+
     @Test
-    public void testLestCommonMultiple(){
+    public void testLestCommonMultiple() {
         Task task = new Task();
         Assert.assertEquals(expect, task.getLeastCommonMultiple(valueFirst, valueSecond));
     }
