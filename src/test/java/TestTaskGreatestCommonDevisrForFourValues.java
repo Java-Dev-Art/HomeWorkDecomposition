@@ -24,7 +24,14 @@ public class TestTaskGreatestCommonDevisrForFourValues {
     @Parameterized.Parameters
     public static Collection<Object[]> setValue(){
         return Arrays.asList(new Object[][]{
-                {6,12,24,36,48}
+                {12,12,24,36,48},
+                {2,20,60,78,100},
+                {1,5,30,78,100},
+                {5,50,25,10,60},
+                {1,3,8,10,34},
+                {1,8,8,10,5},
+                {1,4,45,10,55}
+
         });
     }
 
