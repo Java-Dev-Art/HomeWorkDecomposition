@@ -23,9 +23,7 @@ public class TestToSumAllAddNumbers {
     }
     @Test
     public void testSumOddNumbers(){
-        Assert.assertEquals();
+        Task task = new Task();
+        Assert.assertEquals(expect,task.sumAllOddNumbers(numberForExample));
     }
 }
-//1 2 3 4 5 6 7 8 9
-//1 3 5 7 9
-//25

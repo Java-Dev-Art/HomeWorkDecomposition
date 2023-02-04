@@ -21,4 +21,11 @@ public class Task {
         int pair = getLeastCommonMultiple(a, b);
         return getLeastCommonMultiple(pair, c);
     }
+    public int sumAllOddNumbers(int number) {
+        int sum = 0;
+        for (int i = 1; i <= number; i += 2) {
+            sum += i;
+        }
+        return sum;
+    }
 }
